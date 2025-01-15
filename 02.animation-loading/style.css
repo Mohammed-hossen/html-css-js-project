@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-div {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.content {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 330px;
+  animation: anim 0.5s ease infinite ;
+  padding: 5px;
+ 
+}
+.content1{
+    animation-delay: 0.2s;
+}
+.content2{
+    animation-delay: 0.3s;
+}
+.content3{
+    animation-delay: 0.4s;
+}
+.content4{
+    animation-delay: 0.5s;
+}
+
+@keyframes anim {
+  1% {
+    width: 30px;
+    height: 30px;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
